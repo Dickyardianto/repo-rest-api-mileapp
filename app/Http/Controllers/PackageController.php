@@ -10,4 +10,8 @@ class PackageController extends Controller
     public function getPackage() {
         return Package::all();
     }
+
+    public function getPackageId($id) {
+        return Package::find($id);
+    }
 }
