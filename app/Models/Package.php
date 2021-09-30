@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-// use Illuminate\Database\Eloquent\Model;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Package extends Eloquent
@@ -12,8 +11,4 @@ class Package extends Eloquent
 
     protected $connection = 'mongodb';
     protected $collection = 'package';
-
-    protected $fillable = [
-        
-    ];
 }
