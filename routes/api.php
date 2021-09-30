@@ -18,3 +18,4 @@ use App\Http\Controllers\PackageController;
 
 Route::get('/package', [PackageController::class, 'getPackage']);
 Route::get('/package/{id}', [PackageController::class, 'getPackageId']);
+Route::post('/package', [PackageController::class, 'postPackage']);

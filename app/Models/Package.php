@@ -11,4 +11,8 @@ class Package extends Eloquent
 
     protected $connection = 'mongodb';
     protected $collection = 'package';
+
+    protected $fillable = [
+        'customer_name', 'description' , 'order_name'
+    ];
 }

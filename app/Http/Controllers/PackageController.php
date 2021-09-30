@@ -14,4 +14,8 @@ class PackageController extends Controller
     public function getPackageId($id) {
         return Package::find($id);
     }
+
+    public function postPackage() {
+        return Package::create(request()->all());
+    }
 }
